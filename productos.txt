@@ -1,0 +1,10 @@
+1,Electronico,Smartphone,699.99,10,Samsung,24
+2,Electronico,Laptop,1200.5,5,Apple,36
+3,Electronico,Televisor,850.0,7,Sony,24
+4,Electronico,Tablet,450.75,12,Lenovo,18
+5,Electronico,Auriculares,99.99,20,JBL,12
+6,Ropa,Camiseta,19.99,50,L,Algodón
+7,Ropa,Pantalón,39.99,30,M,Denim
+8,Ropa,Zapatos,79.99,15,42,Cuero
+9,Ropa,Abrigo,120.0,8,XL,Lana
+10,Ropa,Sombrero,25.5,5,Única,Paja
