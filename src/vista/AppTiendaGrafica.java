@@ -58,13 +58,22 @@ public class AppTiendaGrafica extends Application {
         MenuItem vender = new MenuItem("Vender producto");
         MenuItem reponer = new MenuItem("Reponer producto");
         MenuItem mostrar = new MenuItem("Mostrar inventario");
-        MenuItem salir = new MenuItem("Salir");
+        MenuItem salir = new MenuItem("Salir y Guardar");
 
         insertar.setOnAction(e -> root.setCenter(pantallaInsertarProducto()));
         vender.setOnAction(e -> root.setCenter(pantallaVenderReponer(true)));
         reponer.setOnAction(e -> root.setCenter(pantallaVenderReponer(false)));
         mostrar.setOnAction(e -> root.setCenter(pantallaMostrarInventario()));
-        salir.setOnAction(e -> System.exit(0));
+        salir.setOnAction(e -> {
+            try {
+                inventario.guardarDatosFicheroTexto();
+                showInfo("Datos guardados correctamente");
+            } catch (IOException ex) {
+                showError("Error E/S al fichero de texto" + ex.getMessage());
+            }
+            System.exit(0);
+
+        });
 
         menu.getItems().addAll(insertar, vender, reponer, mostrar, salir);
 

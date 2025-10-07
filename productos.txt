@@ -8,3 +8,4 @@
 8,Ropa,Zapatos,79.99,15,42,Cuero
 9,Ropa,Abrigo,120.0,8,XL,Lana
 10,Ropa,Sombrero,25.5,5,Única,Paja
+11,Electronico,Prueba,32.0,10,Samsung,24

@@ -47,6 +47,7 @@ public class Inventario {
                 bw.write(productoRop.getId()+ ",Ropa," + productoRop.getNombre()+ "," + productoRop.getPrecio()+ ","+
                         productoRop.getStock()+ ","+ productoRop.getTalla() +"," + productoRop.getMaterial());
             }
+            bw.newLine();
         }
         bw.close();
         fw.close();
